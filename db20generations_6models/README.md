@@ -7,7 +7,7 @@ library(delimitR)
 fastsimcoalsims(prefix='model', pathtofsc='./fsc26', nreps=10000)
 ```
 
-After simulations, we will define the number of classes to summarize mSFS (the number should be chosen based on the guidelines in delimitR manual), build the prior and random forest classifier and finally select a model:
+After simulations, we will define the number of classes to summarize mSFS (the number should be chosen based on the guidelines in delimitR manual), then build the prior and random forest classifier and finally select a model:
 
 ```
 nclasses <- 10
