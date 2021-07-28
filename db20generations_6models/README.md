@@ -2,12 +2,14 @@ Demographic model scripts are written in fastsimcoal format. These models are de
 
 In order to simulate the models you need to have fsc26 in your working directory:
 
-`library(delimitR)
-fastsimcoalsims(prefix='model', pathtofsc='./fsc26', nreps=10000)`
+```
+library(delimitR)
+fastsimcoalsims(prefix='model', pathtofsc='./fsc26', nreps=10000)
+```
 
 After simulations, we will define the number of classes to summarize mSFS (the number should be chosen based on the guidelines in delimitR manual), build the prior and random forest classifier and finally select a model:
 
-`
+```
 nclasses <- 10
 FullPrior <- makeprior(prefix='model', nspec=4, nclasses=10, mydir='./', traitsfile='traits', threshold=100, thefolder='Prior', ncores=14)
 
@@ -29,7 +31,10 @@ myobserved <- prepobserved(observedSFS,
   threshold = 100)
   
 prediction <- RF_predict_abcrf(myRF, myobserved, ReducedPrior, FullPrior, 500)
-prediction`
+prediction
+```
+
+
 
 
 
