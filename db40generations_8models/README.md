@@ -1,1 +1,0 @@
-Demographic model scripts are written in fastsimcoal format. These models are defined considering 40 generations for the duration of bottleneck (db) in all uplift lineages (including Western Turakirae and Eastern Turakirae).
